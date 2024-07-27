@@ -1,0 +1,43 @@
+https://www.typescriptlang.org/ 
+
+---------------------------------------
+CRIANDO O ARQUIVO PACKAGE.JSON
+npm init -y
+
+---------------------------------------
+INSTALANDO O TYPESCRIPT LOCAL
+npm install typescript --save-dev
+
+
+---------------------------------------
+CRIANDO O ARQUIVO DE CONFIGURAÇÃO TSCONFIG.JSON
+npx tsc --init
+
+---------------------------------------
+EDITANDO O ARQUIVO TSCONFIG.JSON [SUGESTÃO]
+{
+  "compilerOptions": {
+    "target": "es6", // Versão do JavaScript que você deseja compilar
+    "module": "commonjs", // Sistema de módulos a ser usado
+    "outDir": "./dist", // Diretório onde os arquivos compilados serão salvos
+    "rootDir": "./src", // Diretório raiz dos arquivos TypeScript
+    "strict": true, // Habilitar verificações de tipo estritas
+    "esModuleInterop": true // Habilitar interoperação com módulos ES
+  },
+  "include": ["src/**/*"], // Arquivos a serem incluídos na compilação
+  "exclude": ["node_modules"] // Diretório a ser excluído da compilação
+}
+
+---------------------------------------
+COMPILAR O TYPESCRIPT
+npx tsc
+
+Depois de configurado basta digitar 'tsc' no terminal (raiz do projeto) e todos os arquivos 
+modificados serão compilados.
+
+COMANDO DE ESCUTA 'WATCH'
+tsc -w 
+tsc --watch
+---------------------------------------
+---------------------------------------
+---------------------------------------
