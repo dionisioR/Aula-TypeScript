@@ -1,0 +1,10 @@
+"use strict";
+let pessoa = ['Alice', 30, 'engenheira', true];
+let nome0 = pessoa[0];
+let idade0 = pessoa[1];
+let profissao = pessoa[2];
+let ativo0 = pessoa[3];
+console.log(nome0, idade0, profissao, ativo0);
+pessoa[0] = 'Alice das Maravilhas';
+nome0 = pessoa[0];
+console.log(nome0, idade0, profissao, ativo0);
