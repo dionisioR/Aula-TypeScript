@@ -1,0 +1,11 @@
+import Animal from "./011_classes.js";
+const cachorro = new Animal("Totó");
+cachorro.nascer();
+cachorro.crescer();
+cachorro.crescer();
+cachorro.crescer();
+cachorro.crescer();
+cachorro.morrer();
+console.log(cachorro.nome);
+console.log(cachorro.idade);
+console.log(cachorro.estaVivo);
