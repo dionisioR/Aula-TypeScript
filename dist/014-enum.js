@@ -1,0 +1,31 @@
+"use strict";
+var dias;
+(function (dias) {
+    dias[dias["Domingo"] = 0] = "Domingo";
+    dias[dias["Segunda"] = 1] = "Segunda";
+    dias[dias["Ter\u00E7a"] = 2] = "Ter\u00E7a";
+    dias[dias["Quarta"] = 3] = "Quarta";
+    dias[dias["Quinta"] = 4] = "Quinta";
+    dias[dias["Sexta"] = 5] = "Sexta";
+    dias[dias["Sabado"] = 6] = "Sabado";
+})(dias || (dias = {}));
+console.log(dias.Domingo);
+console.log(dias['Domingo']);
+console.log(dias[0]);
+const d = new Date();
+console.log(d);
+console.log(d.getDate());
+console.log(d.getDay());
+console.log(dias[d.getDay()]);
+var tipoUsuario;
+(function (tipoUsuario) {
+    tipoUsuario[tipoUsuario["USER"] = 0] = "USER";
+    tipoUsuario[tipoUsuario["ADMIN"] = 1] = "ADMIN";
+    tipoUsuario[tipoUsuario["SUPER"] = 2] = "SUPER";
+})(tipoUsuario || (tipoUsuario = {}));
+console.log(tipoUsuario.USER);
+console.log(tipoUsuario.ADMIN);
+const tipoUser = tipoUsuario.ADMIN;
+console.log(tipoUser);
+const tipoUser2 = 0;
+console.log(tipoUser2);

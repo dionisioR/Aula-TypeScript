@@ -1,0 +1,11 @@
+"use strict";
+let numeroA = '10.5';
+let numeroB = 20;
+let numeroC;
+let texto;
+numeroC = parseFloat(numeroA) + numeroB;
+console.log(numeroC);
+texto = numeroB.toString();
+console.log(texto);
+texto = numeroA + numeroB;
+console.log(texto);
