@@ -8,13 +8,13 @@ idade = 2;
 plataforma = 'Youtube';
 ativo = true;
 console.log(`nome: ${nome}, idade: ${idade}, plataforma: ${plataforma}, ativo: ${ativo}`);
-function somar(a, b) {
+function somar_(a, b) {
     return a + b;
 }
 let x = 8;
 let y = 2;
 let w = '5';
-console.log(somar(x, y));
+console.log(somar_(x, y));
 let numeros = [1, 2, 3, 4, 5];
 console.log(numeros);
 let numerosStrings = [1, 2, 3, 4, 5, '6', '7'];

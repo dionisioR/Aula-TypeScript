@@ -10,14 +10,14 @@ ativo = true;
 
 console.log(`nome: ${nome}, idade: ${idade}, plataforma: ${plataforma}, ativo: ${ativo}`);
 
-function somar(a:number, b:number){
+function somar_(a:number, b:number){
     return a + b;
 }
 
 let x = 8;
 let y = 2;
 let w = '5'
-console.log(somar(x,y));
+console.log(somar_(x,y));
 // console.log(somar(x,w));
 
 // array de número
